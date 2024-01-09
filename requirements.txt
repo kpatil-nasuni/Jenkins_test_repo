@@ -1,0 +1,5 @@
+packaging==23.2
+pip==23.2.1
+pytest==7.4.4
+selenium==4.16.0
+wheel==0.41.2
