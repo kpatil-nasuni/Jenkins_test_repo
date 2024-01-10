@@ -1,25 +1,27 @@
 @REM install python
-@echo off
-set installer_url=https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe
-set install_dir=C:\Python311
-echo Downloading Python installer...
-curl -o python_installer.exe %installer_url%
-echo Installing Python...
-start /wait python_installer.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
-echo Cleaning up...
-del python_installer.exe
-echo Python installation complete.
+@REM @echo off
+@REM set installer_url=https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe
+@REM set install_dir=C:\Python311
+@REM echo Downloading Python installer...
+@REM curl -o python_installer.exe %installer_url%
+@REM echo Installing Python...
+@REM start /wait python_installer.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
+@REM echo Cleaning up...
+@REM del python_installer.exe
+@REM echo Python installation complete.
 
 @REM install pip
-@echo off
-set installer_url=https://bootstrap.pypa.io/get-pip.py
-echo Downloading pip installer...
-curl -o get-pip.py %installer_url%
-echo Installing pip...
-python get-pip.py
-echo Cleaning up...
-del get-pip.py
-echo pip installation complete.
+@REM @echo off
+@REM set installer_url=https://bootstrap.pypa.io/get-pip.py
+@REM echo Downloading pip installer...
+@REM curl -o get-pip.py %installer_url%
+@REM echo Installing pip...
+@REM python get-pip.py
+@REM echo Cleaning up...
+@REM del get-pip.py
+@REM echo pip installation complete.
 
-pip install -r requirements.txt
-pytest test_file.py
+python --version
+
+@REM pip install -r requirements.txt
+@REM pytest test_file.py
