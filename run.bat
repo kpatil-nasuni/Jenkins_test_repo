@@ -23,5 +23,5 @@
 
 python --version
 
-@REM pip install -r requirements.txt
-@REM pytest test_file.py
+pip install -r requirements.txt
+pytest test_file.py
